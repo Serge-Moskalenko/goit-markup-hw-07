@@ -78,15 +78,23 @@ span {
   padding-bottom: 32px;
 }
 
-.nav__item,
-.auto__item {
+.nav__item {
   display: block;
   margin-right: 50px;
   color: var(--praimeri-text-color);
 }
 
+.auto__item {
+  display: block;
+  margin-right: 30px;
+  color: var(--praimeri-text-color);
+}
+
+.auto__item:last-child {
+  margin-right: 0;
+}
+
 .nav__link {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -125,7 +133,6 @@ span {
 }
 
 .auto__link {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -164,10 +171,6 @@ span {
 .auto__smartphone:hover, .auto__smartphone:focus {
   fill: var(--accent-color);
   cursor: pointer;
-}
-
-.auto .auto__item + .auto__item {
-  margin-left: 50px;
 }
 
 .nav__link:last-child,
