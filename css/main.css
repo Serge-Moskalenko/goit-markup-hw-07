@@ -506,6 +506,7 @@ span {
   line-height: 1.71;
   text-align: left;
   margin: 0;
+  color: #757575;
 }
 
 .about {
@@ -541,7 +542,6 @@ img {
 }
 
 .image__title {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;

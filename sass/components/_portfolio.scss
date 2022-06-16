@@ -15,7 +15,7 @@
     @extend %list;
     display: flex;
     margin-top: 0;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -26,7 +26,6 @@
 
 .button__button{
     background-color: var(--backgraund-section-color);
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.63;
@@ -92,12 +91,13 @@ img {
     height: 294px;
     background: rgba(33, 150, 243, 0.9);
     opacity: 0;
+    pointer-events: none;
 
     transform: translateY(100%);
     transition: transform var(--animation), opacity var(--animation);
 
-    .promo__hover:hover &,
-    .promo__hover:focus &{
+    .promo__item:hover &,
+    .promo__item:focus &{
         transform: translateY(0);
         opacity: 1;
     }
@@ -105,7 +105,6 @@ img {
 }
 
 .promo__content {
-    font-family: Roboto;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
@@ -121,7 +120,7 @@ img {
 }
 
 .promo__title {
-    font-family: Roboto;
+    color: #212121;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -129,8 +128,7 @@ img {
     margin-bottom: 4px;
 }
 
-.portfolio__text {
-    font-family: Roboto;
+.promo__text {
     line-height: 1.88;
     color: var(--title-text-color);
     margin: 0;
